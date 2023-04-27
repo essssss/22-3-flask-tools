@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+<!-- -->
+{% block title %}Are we lucky today?{% endblock %}
+<!--  -->
+{%block content%}
+<h1>Your lucky number is: {{lucky_num}}</h1>
+<p>{{msg}}</p>
+
+{% if lucky_num == 3 %}
+<h2>That's my lucky number as well!</h2>
+{% else %}
+<h2>I got "3"!</h2>
+{% endif %} {% endblock%}
